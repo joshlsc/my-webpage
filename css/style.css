@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #2b2b2b;
+  background-color: #f1f1f1cc;
+}
+
+/* Main Container */
+.main-container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #2b2b2b;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #0066ec;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0157c7;
+  color: #ffffff;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1cc;
+  padding: 20px;
+}
+
+.my-skills ul li{
+    line-height: 2rem;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: #f1f1f1cc;
+  padding: 20px;
+  border-left: 1px solid rgba(61, 61, 61, 0.274);
+}
+
+.main h2 {
+    color: #0066ec;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Main Form */
+.main-form {
+    margin: 0 auto;
+    /* margin: 0px 20px; */
+}
+
+/* Form Label */
+.form-group > label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+/* Form Input */
+.form-group > input{
+    width: 80%;
+    height: 2rem;
+    margin-bottom: 15px;
+    border: 1px rgba(170, 170, 170, 0.753) solid;
+}
+
+/* Form Textarea */
+.form-group > textarea {
+    width: 80%;
+    margin-bottom: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px rgba(170, 170, 170, 0.753) solid;
+}
+
+/* Form Textarea Placeholder */
+.form-group > textarea::placeholder {
+    padding: 3px 0px 0px 3px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/* Form Button */
+.form-group > button {
+    width: 80%;
+    height: 2rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0066eccb;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.form-group > button:hover {
+    color: #fff;
+    background-color: #0066ec;
+    border-style: none;
+    border-radius: 3px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(43, 43, 43);
+}
+
+.footer p {
+    color: #fff;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
